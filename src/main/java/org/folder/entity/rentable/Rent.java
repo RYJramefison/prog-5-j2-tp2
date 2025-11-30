@@ -1,4 +1,4 @@
-package org.folder.entity.materiel;
+package org.folder.entity.rentable;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

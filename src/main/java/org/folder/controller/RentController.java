@@ -1,7 +1,7 @@
 package org.folder.controller;
 
 import lombok.AllArgsConstructor;
-import org.folder.entity.materiel.Rent;
+import org.folder.entity.rentable.Rent;
 import org.folder.service.RentService;
 
 import java.util.List;

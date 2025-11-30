@@ -1,6 +1,6 @@
 package org.folder.repository;
 
-import org.folder.entity.materiel.Rent;
+import org.folder.entity.rentable.Rent;
 import org.folder.manager.DataSourceManager;
 
 import java.sql.Connection;

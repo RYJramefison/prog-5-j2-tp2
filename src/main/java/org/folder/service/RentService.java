@@ -1,6 +1,6 @@
 package org.folder.service;
 
-import org.folder.entity.materiel.Rent;
+import org.folder.entity.rentable.Rent;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
 package org.folder.service;
 
 import lombok.RequiredArgsConstructor;
-import org.folder.entity.materiel.Rent;
+import org.folder.entity.rentable.Rent;
 import org.folder.repository.RentRepository;
 import org.folder.repository.RentRepositoryImpl;
 
