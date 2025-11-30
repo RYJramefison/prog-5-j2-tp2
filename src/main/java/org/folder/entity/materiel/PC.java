@@ -1,4 +1,4 @@
 package org.folder.entity.materiel;
 
-public class PC {
+public class PC extends Item{
 }

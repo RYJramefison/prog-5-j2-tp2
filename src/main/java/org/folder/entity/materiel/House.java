@@ -1,4 +1,4 @@
 package org.folder.entity.materiel;
 
-public class House {
+public class House extends Item{
 }

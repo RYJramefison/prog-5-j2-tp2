@@ -1,4 +1,4 @@
 package org.folder.entity.materiel;
 
-public class Car {
+public class Money extends Item{
 }
