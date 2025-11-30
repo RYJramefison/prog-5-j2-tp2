@@ -1,4 +1,5 @@
 package org.folder.entity.rentable;
+import org.folder.entity.renter.AbstractRenter;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,6 +12,6 @@ import lombok.Setter;
 @Setter
 public class Rent {
     private int id;
-    private String renterName;
+    private AbstractRenter renter;
     private double price;
 }

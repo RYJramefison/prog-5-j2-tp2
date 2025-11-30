@@ -15,23 +15,21 @@ public class RentRepositoryImpl implements RentRepository{
     private final DataSourceManager db = new DataSourceManager();
     @Override
     public Rent getRent(int id) {
+        Rent rent = new Rent();
         try (Connection con = db.getConnection()){
             PreparedStatement stmt = con.prepareStatement("SELECT * FROM rent WHERE id = ?");
             stmt.setInt(1, id);
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()){
-                Rent rent = new Rent();
-
                 rent.setId(rs.getInt("id"));
-                rent.setRenterName(rs.getString("renter_name"));
                 rent.setPrice(rs.getDouble("price"));
                 return rent;
             }
         } catch (SQLException e) {
             throw new RuntimeException("Error in getRent " + e);
         }
-        return null;
+        return rent;
     }
 
     @Override
@@ -46,7 +44,6 @@ public class RentRepositoryImpl implements RentRepository{
             while(rs.next()){
                 Rent rent = new Rent();
                 rent.setId(rs.getInt("id"));
-                rent.setRenterName(rs.getString("renter_name"));
                 rent.setPrice(rs.getDouble("price"));
             }
         } catch (SQLException e) {
