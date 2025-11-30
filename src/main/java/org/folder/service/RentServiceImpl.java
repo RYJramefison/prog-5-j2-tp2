@@ -20,7 +20,7 @@ public class RentServiceImpl implements RentService{
             return repository.getRent(id);
 
         } catch (Exception e) {
-            logger.severe("Error fetching ret: " + e.getMessage());
+            logger.severe("Error fetching rent: " + e.getMessage());
         }
         return null;
     }
