@@ -1,7 +1,16 @@
 package org.folder.entity.materiel;
 
-public abstract class Rent {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class Rent {
     private int id;
-    private double renterName;
+    private String renterName;
     private double price;
 }
