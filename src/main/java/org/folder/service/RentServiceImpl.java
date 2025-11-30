@@ -1,5 +1,6 @@
 package org.folder.service;
 
+import lombok.RequiredArgsConstructor;
 import org.folder.entity.materiel.Rent;
 import org.folder.repository.RentRepository;
 import org.folder.repository.RentRepositoryImpl;
@@ -7,9 +8,11 @@ import org.folder.repository.RentRepositoryImpl;
 import java.util.List;
 import java.util.logging.Logger;
 
+@RequiredArgsConstructor
 public class RentServiceImpl implements RentService{
     private final RentRepository repository;
     private static Logger logger = Logger.getLogger(RentRepositoryImpl.class.getName());
+
 
     @Override
     public Rent fetchRent(int id) {

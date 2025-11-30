@@ -4,6 +4,7 @@ import org.folder.entity.materiel.Rent;
 
 import java.util.List;
 
+
 public interface RentRepository {
     Rent getRent(int id);
 
